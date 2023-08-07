@@ -8,15 +8,15 @@ public class App
 {
     public static void main( String[] args ) {
         BankAccount negarAccount = new BankAccount("Negar", "NegarA@gmail.com", "0722915323");
-        System.out.println("Account Number: " + negarAccount.getAccountNumber());
+        negarAccount.printAccount();
         negarAccount.deposit(1000);
         negarAccount.withdraw(400);
         negarAccount.withdraw(700);
 
         BankAccount erikAccount = new BankAccount("Erik", "Erik@hotmail.com", "0745663325");
-        System.out.println("Account Number: " + erikAccount.getAccountNumber());
+        erikAccount.printAccount();
 
         BankAccount jointAccount = new BankAccount("Erik & Hannah", "Erik@hotmail.com", "0745663325");
-        System.out.println("Account Number: " + jointAccount.getAccountNumber());
+        jointAccount.printAccount();
     }
 }

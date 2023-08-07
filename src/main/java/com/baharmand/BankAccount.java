@@ -19,6 +19,10 @@ public class BankAccount {
         return accountNumber;
     }
 
+    public void printAccount() {
+        System.out.println("Account Number: " + this.getAccountNumber());
+    }
+
     public double getBalance() {
         return balance;
     }
