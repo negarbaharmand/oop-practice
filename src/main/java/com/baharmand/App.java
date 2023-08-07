@@ -6,12 +6,17 @@ package com.baharmand;
  */
 public class App 
 {
-    public static void main( String[] args )
-    {
-       BankAccount negarsAccount = new BankAccount("Negar", "NegarA@gmail.com", "0722915323");
-        System.out.println("Account Number: " + negarsAccount.getAccountNumber());
-        negarsAccount.deposit(1000);
-        negarsAccount.withdraw(400);
-        negarsAccount.withdraw(700);
+    public static void main( String[] args ) {
+        BankAccount negarAccount = new BankAccount("Negar", "NegarA@gmail.com", "0722915323");
+        System.out.println("Account Number: " + negarAccount.getAccountNumber());
+        negarAccount.deposit(1000);
+        negarAccount.withdraw(400);
+        negarAccount.withdraw(700);
+
+        BankAccount erikAccount = new BankAccount("Erik", "Erik@hotmail.com", "0745663325");
+        System.out.println("Account Number: " + erikAccount.getAccountNumber());
+
+        BankAccount jointAccount = new BankAccount("Erik & Hannah", "Erik@hotmail.com", "0745663325");
+        System.out.println("Account Number: " + jointAccount.getAccountNumber());
     }
 }
